@@ -3,10 +3,10 @@ function Interprete(props) {
   return (
     <>
       <div>
-        <img src={foto} alt={nombre}/>
-        <div>
-          <h2>{nombre}</h2>
-          <p>{props.children}</p>
+        <img src={foto} alt={nombre} />
+        <div className="card__body">
+          <h2 className="card__title">{nombre}</h2>
+          <p className="card__text">{props.children}</p>
         </div>
       </div>
     </>

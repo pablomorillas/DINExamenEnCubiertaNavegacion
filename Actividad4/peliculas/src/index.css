@@ -2,7 +2,7 @@
 @import "./theme.css";
 
 .contenedor_h1 {
-  font-family: var(--heading-h1-font-family);
+  font-family: var(--font-family);
   font-size: var(--heading-h1-font-size);
   font-style: var(--heading-h1-font-style);
   font-weight: var(--heading-h1-font-weight);
@@ -11,7 +11,7 @@
   color: var(--color-primary);
 }
 .contenedor_h2 {
-  font-family: var(--heading-h2-font-family);
+  font-family: var(--font-family);
   font-size: var(--heading-h2-font-size);
   font-style: var(--heading-h2-font-style);
   font-weight: var(--heading-h2-font-weight);

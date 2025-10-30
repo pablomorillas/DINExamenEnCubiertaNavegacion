@@ -5,16 +5,11 @@
 import Interprete from "./Interprete"
 
 function Contenedor({children}) {
-  // const [count, setCount] = useState(0)
-
+  // simple wrapper that becomes a card; children is expected to be an <Interprete /> element
   return (
-    <>
-    <Interprete>
-      <div>
-        {children}
-      </div>
-    </Interprete>
-    </>
+    <div className="card">
+      {children}
+    </div>
   )
 }
 
