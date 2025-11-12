@@ -1,5 +1,5 @@
-import Contenedor from './Contenedor'
-import Interprete from './Interprete'
+import Contenedor from './components/Card'
+import Interprete from '.components/Interprete'
 import {peliculas} from './data/peliculas'
 
 function App() {
@@ -25,14 +25,14 @@ function App() {
         {peliculas.filter(peliculas => peliculas.clasificacion === "Drama")
         .map(pelicula => (
           pelicula.actores.map((actor, index) => (
-            <Contenedor key={index}>
+            <Card key={index}>
               <Interprete
                 nombre={actor.nombre}
                 foto={actor.imagen}
-                esNota10={pelicula.nota === 10}>
+                calificacion={pelicula.nota === 10}>
                 {actor.biografia}
               </Interprete>
-            </Contenedor>
+            </Card>
           ))
         ))}
       </div>
